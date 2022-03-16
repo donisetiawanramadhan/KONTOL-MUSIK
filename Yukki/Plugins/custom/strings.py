@@ -3,7 +3,7 @@ from Yukki import BOT_NAME, BOT_USERNAME
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 START_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **Halo MENTION !**
 
 **You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
 
@@ -20,18 +20,18 @@ START_BUTTON_GROUP = InlineKeyboardMarkup(
     [   
         [
             InlineKeyboardButton(
-                text="📚 Commands", callback_data="command_menu"
+                text="Commands", callback_data="command_menu"
             ),
             InlineKeyboardButton(
-                text="🔧 Settings", callback_data="settingm"
+                text="Settings", callback_data="settingm"
             ),                                   
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/ABOUTVEDMAT"
+                text="Updates Channel", url="https://t.me/synxupdate"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/LOVELYAPPEAL"
+                text="Support Group", url="https://t.me/synxsupport"
             ),                       
         ],        
     ]
@@ -45,15 +45,15 @@ START_BUTTON_PRIVATE = InlineKeyboardMarkup(
         ],
         [   
             InlineKeyboardButton(
-                text="📚 Commands", callback_data="command_menu"
+                text="Commands", callback_data="command_menu"
             ),                       
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/ABOUTVEDMAT"
+                text="Updates Channel", url="https://t.me/synxupdate"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/LOVELYAPPEAL"
+                text="Support Group", url="https://t.me/synxsupport"
             ),                       
         ],        
     ]
@@ -114,7 +114,7 @@ COMMANDS_BUTTON_SUDO = InlineKeyboardMarkup(
                 text="↪️ Back", callback_data="command_menu"
             ),
             InlineKeyboardButton(
-                text="🔄 Close", callback_data="close_btn"
+                text="🗑️ Close", callback_data="close_btn"
             ),            
         ],                
     ]
@@ -126,7 +126,7 @@ BACK_BUTTON = InlineKeyboardMarkup(
                 text="↪️ Back", callback_data="advanced_cmd"
             ),
             InlineKeyboardButton(
-                text="🔄 Close", callback_data="close_btn"
+                text="🗑️ Close", callback_data="close_btn"
             ),            
         ],                        
     ]
@@ -143,7 +143,7 @@ SUDO_BACK_BUTTON = InlineKeyboardMarkup(
                 text="↪️ Back", callback_data="advanced_cmd"
             ),
             InlineKeyboardButton(
-                text="🔄 Close", callback_data="close_btn"
+                text="🗑️ Close", callback_data="close_btn"
             ),            
         ],                        
     ]
