@@ -5,15 +5,15 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_TEXT = f"""
 ✨ **Halo MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
+**Sampeyan bisa nggunakake [{BOT_NAME}](https://t.me/{BOT_USERNAME}) kanggo muter Musik utawa Video ing Obrolan Video Grup.**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
+💡 **Temokake kabeh printah Bot lan cara kerjane ngeklik ing ➤  Commands button**
 """
 
 COMMANDS_TEXT = f"""
 ✨ **Hello MENTION !**
 
-**Click on the buttons below to know my commands.**
+**Klik ing tombol ing ngisor iki kanggo ngerti printah sandi.**
 """
 
 START_BUTTON_GROUP = InlineKeyboardMarkup(
@@ -81,7 +81,7 @@ COMMANDS_BUTTON_USER = InlineKeyboardMarkup(
                 text="↪️ Back", callback_data="command_menu"
             ),
             InlineKeyboardButton(
-                text="🔄 Close", callback_data="close_btn"
+                text="🗑️ Close", callback_data="close_btn"
             ),            
         ],                
     ]
@@ -154,35 +154,35 @@ ADMIN_TEXT = f"""
 Here is the help for **Admin Commands:**
 
 
---**ADMIN ONLY COMMANDS WITH MANAGE VC RIGHT:**--
+--**ADMIN ONLY printah karo ngatur VC tengen:**--
 
 /pause 
-- Pause the playing music on voice chat.
+- Ngaso muter musik ing obrolan swara.
 
 /resume
-- Resume the paused music on voice chat.
+- Terusake musik sing ngaso ing obrolan swara.
 
 /skip
-- Skip the current playing music on voice chat
+- Skip musik sing lagi diputer ing obrolan swara
 
 /end or /stop
-- Stop the playout.
+- Mungkasi playout.
 
 
 --**Authorised Users List:**--
 
-**{BOT_NAME} has a additional feature for non-admin users who want to use admin commands**
-- Auth users can skip, pause, stop, resume Voice Chats even without Admin Rights.
+**{BOT_NAME} nduweni fitur tambahan kanggo pangguna non-admin sing pengin nggunakake printah admin**
+- Pangguna auth bisa ngliwati, ngaso, mandheg, nerusake Obrolan Swara sanajan tanpa Hak Admin.
 
 
-/auth [Username or Reply to a Message] 
-- Add a user to AUTH LIST of the group.
+/auth [Jeneng pangguna utawa Balas Pesen] 
+- Tambah pangguna menyang DAFTAR AUTH saka grup.
 
-/unauth [Username or Reply to a Message] 
-- Remove a user from AUTH LIST of the group.
+/unauth [Jeneng pangguna utawa Balas Pesen] 
+- Mbusak pangguna saka AUTH LIST saka grup.
 
 /authusers 
-- Check AUTH LIST of the group.
+- Priksa DAFTAR AUTH saka grup.
 """
 
 BOT_TEXT = """
@@ -190,43 +190,43 @@ Here is the help for **Bot Commands:**
 
 
 /vcstart 
-- Start the Music Bot.
+- Miwiti Bot Musik.
 
 /vchelp 
-- Get Commands Helper Menu with detailed explanations of commands.
+- Entuk Menu Helper Commands kanthi panjelasan rinci babagan printah.
 
 /vcsettings 
-- Get Settings dashboard of a group. You can manage Auth Users Mode. Commands Mode from here.
+- Entuk Dashboard Setelan saka grup. Sampeyan bisa ngatur Mode Pangguna Auth. Mode printah saka kene.
 
 /ping
-- Ping the Bot and check Ram, Cpu etc stats of Music Bot."""
+- Ping Bot lan priksa statistik Ram, Cpu etc saka Music Bot."""
 
 PLAY_TEXT = """
-Here is the help for **Play Commands:**
+Punika bantuan kanggo **Play Commands:**
 
 
 --**Youtube and Telegram Files:**--
 
-/play __[Music Name]__(Bot will search on Youtube)
-/play __[Youtube Track link or Playlist]__
+/play __[Jeneng Musik]__(Bot bakal nggoleki ing Youtube)
+/play __[Link Youtube Track utawa Dhaptar lagu]__
 /play __[Video, Live, M3U8 Links]__
-/play __[Reply to a Audio or Video File]__
-- Stream Video or Music on Voice Chat by selecting inline Buttons you get
+/play __[Mbales File Audio utawa Video]__
+- Stream Video utawa Musik ing Obrolan Swara kanthi milih Tombol inline sing sampeyan entuk
 
 
 --**Playlists:**--
 
 /playplaylist 
-- Start playing Your Saved Playlist.
+- Miwiti muter Dhaptar lagu sing disimpen.
 
 /playlist 
-- Check Your Saved Playlist On Servers.
+- Priksa dhaptar lagu sing wis disimpen ing server.
 
 /delmyplaylist
-- Delete any saved music in your playlist
+- Busak musik sing disimpen ing dhaptar lagu
 
 /delgroupplaylist
-- Delete any saved music in your group's playlist [Requires Admin Rights.]
+- Busak musik sing disimpen ing dhaptar lagu grup sampeyan [Requires Admin Rights.]
 """
 
 SUDO_TEXT = f"""
@@ -310,7 +310,7 @@ COMMAND_MENU_BUTTON = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="📚 Advanced Commands", callback_data="advanced_cmd"
+                text="Advanced Commands", callback_data="advanced_cmd"
             ),
         ],
         [
@@ -318,7 +318,7 @@ COMMAND_MENU_BUTTON = InlineKeyboardMarkup(
                 text="↪️ Back", callback_data="open_start_menu"
             ),
             InlineKeyboardButton(
-                text="🔄 Close", callback_data="close_btn"
+                text="🗑️ Close", callback_data="close_btn"
             ),            
         ],                        
     ]
